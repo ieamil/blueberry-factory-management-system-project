@@ -1,0 +1,92 @@
+[
+  {
+    "productName": "Organic Blueberry",
+    "weight": 100,
+    "category": "Small",
+    "totalStock": 500000
+  },
+  {
+    "productName": "Dried Blueberry",
+    "weight": 250,
+    "category": "Medium",
+    "totalStock": 3000
+  },
+  {
+    "productName": "Frozen Blueberry",
+    "weight": 1000,
+    "category": "Extra Large",
+    "totalStock": 20000
+  },
+  {
+    "productName": "Fresh Blueberry",
+    "weight": 150,
+    "category": "Medium",
+    "totalStock": 1200
+  },
+  {
+    "productName": "Blueberry Jam",
+    "weight": 500,
+    "category": "Large",
+    "totalStock": 750
+  },
+  {
+    "productName": "Blueberry Muffin",
+    "weight": 200,
+    "category": "Family Pack",
+    "totalStock": 500
+  },
+  {
+    "productName": "Blueberry Syrup",
+    "weight": 1000,
+    "category": "Bulk Pack",
+    "totalStock": 4000
+  },
+  {
+    "productName": "Freeze-Dried Blueberry",
+    "weight": 50,
+    "category": "Small",
+    "totalStock": 8000
+  },
+  {
+    "productName": "Blueberry Pie",
+    "weight": 1500,
+    "category": "Extra Large",
+    "totalStock": 150
+  },
+  {
+    "productName": "Blueberry Yogurt",
+    "weight": 200,
+    "category": "Medium",
+    "totalStock": 1000
+  },
+  {
+    "productName": "Blueberry Powder",
+    "weight": 100,
+    "category": "Small",
+    "totalStock": 3000
+  },
+  {
+    "productName": "Blueberry Smoothie",
+    "weight": 500,
+    "category": "Large",
+    "totalStock": 2000
+  },
+  {
+    "productName": "Blueberry Pancake Mix",
+    "weight": 750,
+    "category": "Family Pack",
+    "totalStock": 800
+  },
+  {
+    "productName": "Blueberry Chocolate",
+    "weight": 250,
+    "category": "Medium",
+    "totalStock": 600
+  },
+  {
+    "productName": "Blueberry Concentrate",
+    "weight": 2000,
+    "category": "Bulk Pack",
+    "totalStock": 10000
+  }
+]

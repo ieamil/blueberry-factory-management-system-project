@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.content {
+  margin-left: 200px;
+  padding-top: 80px;
+  padding: 20px;
+  max-width: 1200px; 
+}
+
+.content h2 {
+  margin-top: 60px;
+  color: #E98074;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Form  */
+.forms {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  background-color: #F5E8DC;
+  padding: 20px;
+  border-radius: 8px;
+  width: 150%; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  color: #E98074;
+  margin-bottom: 15px;
+}
+
+.form-section form input,
+.form-section form select {
+  width: 100%;
+  padding: 12px; /* Daha fazla padding ekledim */
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 14px;  
+  background-color: #86C232;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.form-section form button:hover {
+  background-color: #61892F;
+}
+
+/* Tablo Alanı */
+.table-section {
+  margin-top: 30px;
+}
+
+.table-section h3 {
+  color: #8E8D8A;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;  /* Daha fazla padding ekledim */
+  text-align: center;
+  font-size: 1rem;
+}
+
+table th {
+  background-color: #EAE7DC;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td button {
+  background-color: #E98074;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table td button:hover {
+  background-color: #E85A4F;
+}
+
+/* Sipariş Durumu Güncelleme */
+.status-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.status-select:hover {
+  border-color: #61892F;
+}
+
+/* Arama ve Filtreleme */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section input,
+.filter-section select {
+  width: auto;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem; 
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .forms {
+    flex-direction: column;
+    gap: 20px;  /* Dikeyde daha fazla boşluk ekledim */
+  }
+
+  .form-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Category Summary Container */
+.category-summary-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #F5E8DC; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  position: absolute; 
+  right: 20px; 
+  top: 100px; 
+}
+
+.category-summary-container h3 {
+  color: #E98074;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Category Sales and Stock */
+#category-sales, #category-stock {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555555;
+}

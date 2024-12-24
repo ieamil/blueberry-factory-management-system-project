@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Afra Ahsen Çakmak",
+    "contact": "afraahsen@gmail.com",
+    "address": "123 Blueberry, Istanbul"
+  },
+  {
+    "id": 2,
+    "name": "Mehmet Demir",
+    "contact": "mehmetdemir@gmail.com",
+    "address": "456 Berry, Ankara"
+  },
+  {
+    "id": 3,
+    "name": "Elif Kayakaya",
+    "contact": "elifkaya@gmail.com",
+    "address": "789 Fruit, Izmir"
+  },
+  {
+    "id": 4,
+    "name": "Egemen Varol",
+    "contact": "egemenvarol@gmail.com",
+    "address": "101 Harvest, Antalya"
+  },
+  {
+    "id": 5,
+    "name": "Ayşe Demir",
+    "contact": "aysedemir@gmail.com",
+    "address": "202 Farm, Bursa"
+  },
+  {
+    "id": 6,
+    "name": "Hasan Kurt",
+    "contact": "hasankurt@gmail.com",
+    "address": "303 Field, Adana"
+  },
+  {
+    "id": 7,
+    "name": "Zeynep Arslan",
+    "contact": "zeyneparslan@gmail.com",
+    "address": "404 Kedi, Trabzon"
+  },
+  {
+    "id": 8,
+    "name": "Burak Yılmaz",
+    "contact": "burakyilmaz@gmail.com",
+    "address": "505 Orchard , Gaziantep"
+  }
+]

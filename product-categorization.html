@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Categorization</title>
+  <link rel="stylesheet" href="css/product-categorization.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="icon" href="images/factoryLogo.png" type="image/png">
+  <script src="javascript/product-categorization.js" defer></script>
+  <script src="javascript/inventory-management.js"defer></script>
+</head>
+<body>
+  <div id="common-components"></div> 
+
+  <div class="content">
+    <h2>Product Categorization</h2>
+    <div class="product-management">
+      <div class="forms">
+        <!-- Add Product -->
+        <div class="form-section">
+          <h3>Bluberry Packaging</h3>
+          <form id="add-product-form">
+            <label for="product-name-dropdown">Product Name</label>
+              <select id="product-name-dropdown">
+                <!-- Ürünler dinamik -->
+              </select>
+            <input type="number" id="product-weight" placeholder="Weight (in grams)" required min="0">
+            <input type="button" id="check-category" value="Check Category">
+            <input type="text" id="category-name" placeholder="Category Name" readonly>
+            <input type="number" id="quantity-select" placeholder="Quantity" readonly>
+            <input type="number" id="product-stock" placeholder="Total Stock (kg)" readonly>
+            <button type="submit">Add Product</button>
+          </form>
+        </div>
+
+        <!-- Update Category -->
+        <div class="form-section">
+          <h3>Update Category</h3>
+          <form id="update-category-form">
+            <select id="select-category" required>
+              <option value="">Select Category</option>
+              <!-- Kategoriler dinamik -->
+            </select>
+            <input type="number" id="update-min-weight" placeholder="New Min Weight (grams)" min="0">
+            <input type="number" id="update-max-weight" placeholder="New Max Weight (grams)" min="0">
+            <input type="number" id="update-price" placeholder="New Price per Kg" step="0.01" min="0">
+            <button type="submit">Update Category</button>
+          </form>
+        </div>
+
+      <!-- Inventory Management -->
+      <div class="form-section">
+        <h3>Update Inventory</h3>
+        <form id="update-inventory-form">
+          <select id="select-category-for-inventory" required>
+            <option value="">Select Category</option>
+            <!-- Kategoriler dinamik -->
+          </select>
+          <input type="number" id="current-stock" placeholder="Current Stock (kg)" readonly min="0">
+          <input type="number" id="min-stock-threshold" placeholder="Minimum Stock Threshold (kg)" required min="0">
+          <input type="number" id="new-stock" placeholder="New Minimum Stock Threshold (kg)" min="0">
+          <input type="text" id="restock-date" placeholder="Restock Date" >
+          <input type="text" id="storage-location" placeholder="Storage Location" >
+
+          <button type="submit">Update Inventory</button>
+        </form>
+      </div>
+
+
+      <!-- Product Table -->
+      <div class="table-section">
+        <h3>All Products</h3>
+        <div class="filter-section">
+          <label for="category-filter">Filter by Category:</label>
+          <select id="category-filter">
+            <option value="All">All Categories</option>
+            <!-- Kategoriler dinamik -->
+          </select>
+        </div>
+        <table id="product-table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Weight</th>
+              <th>Category</th>
+              <th>Total Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dinamik  -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-section-container">
+        <!-- Pricing Table -->
+        <div class="table-section">
+          <h3>Category Pricing</h3>
+          <table id="pricing-table">
+            <thead>
+              <tr>
+                <th>Category Name</th>
+                <th>Min Weight (g)</th>
+                <th>Max Weight (g)</th>
+                <th>Price per Kg ($)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dinamik içerik buraya eklenecek -->
+            </tbody>
+          </table>
+      
+        <!-- Calculate Total Cost -->
+        <div class="calculate-total-cost-section">
+          <h3>Calculate Total Cost</h3>
+          <form id="calculate-total-cost-form">
+            <select id="select-category-for-cost" required>
+              <option value="">Select Category</option>
+              <!--  dinamik  -->
+            </select>
+            <input type="number" id="quantity-for-cost" placeholder="Quantity (Kg)" step="0.01" required min="0">
+            <button type="button" id="calculate-cost-button">Calculate</button>
+          </form>
+          <p id="total-cost-display">Total Cost: $0.00</p>
+        </div>
+      </div>
+      
+      <!-- Inventory Table -->
+      <table id="inventory-table">
+        <h3>Inventory Management</h3>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Current Stock (kg)</th>
+            <th>Minimum Stock Threshold (kg)</th>
+            <th>Restock Date</th>
+            <th>Storage Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dinamik  -->
+        </tbody>
+      </table>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("sidebar-topbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("common-components").innerHTML = html;
+        });
+    });
+  </script>
+</body>
+</html>

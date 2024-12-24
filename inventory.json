@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Small",
+    "stock": 5008.6,
+    "minimumStockThreshold": 1,
+    "status": "Sufficient",
+    "restockDate": "2024-12-25",
+    "storageLocation": "Warehouse Section A"
+  },
+  {
+    "category": "Premium",
+    "stock": 200,
+    "minimumStockThreshold": 600000,
+    "status": "Low Stock",
+    "restockDate": "2024-12-30",
+    "storageLocation": "Warehouse Section B"
+  },
+  {
+    "category": "Extra Large",
+    "stock": 5000,
+    "minimumStockThreshold": 11,
+    "status": "Low Stock",
+    "restockDate": "2024-12-28",
+    "storageLocation": "Warehouse Section C"
+  },
+  {
+    "category": "Medium",
+    "stock": 600,
+    "minimumStockThreshold": 20,
+    "status": "Low Stock",
+    "restockDate": "2024-12-29",
+    "storageLocation": "Warehouse Section D"
+  },
+  {
+    "category": "Large",
+    "stock": 10000,
+    "minimumStockThreshold": 500,
+    "status": "Sufficient",
+    "restockDate": "2024-12-26",
+    "storageLocation": "Warehouse Section E"
+  },
+  {
+    "category": "Family Pack",
+    "stock": 2000,
+    "minimumStockThreshold": 100,
+    "status": "Sufficient",
+    "restockDate": "2024-12-27",
+    "storageLocation": "Warehouse Section F"
+  },
+  {
+    "category": "Bulk Pack",
+    "stock": 1500,
+    "minimumStockThreshold": 50,
+    "status": "Sufficient",
+    "restockDate": "2024-12-31",
+    "storageLocation": "Warehouse Section G"
+  }
+]

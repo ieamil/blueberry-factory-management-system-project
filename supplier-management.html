@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Management</title>
+  <link rel="stylesheet" href="css/supplier.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="icon" href="images/factoryLogo.png" type="image/png">
+  <script src="javascript/supplier.js" defer></script>
+</head>
+<body>
+  <div id="common-components"></div>
+
+  <div class="content">
+    <h2>Supplier Management</h2>
+    <div class="supplier-management">
+      <div class="forms">
+        <!-- Add Supplier -->
+        <div class="form-section">
+          <h3>Add Supplier</h3>
+          <form id="add-supplier-form">
+            <input type="text" id="supplier-id" placeholder="Supplier ID" required>
+            <input type="text" id="supplier-name" placeholder="Supplier Name" required>
+            <input type="text" id="supplier-location" placeholder="Location" required>
+            <input type="text" id="supplier-contact" placeholder="Contact Info" required>
+            <button type="submit">Add</button>
+          </form>
+        </div>
+
+        <!-- Update Supplier -->
+        <div class="form-section">
+          <h3>Update Supplier</h3>
+          <form id="update-supplier-form">
+            <input type="text" id="update-supplier-id" placeholder="Supplier ID" required>
+            <input type="text" id="update-supplier-name" placeholder="Supplier Name">
+            <input type="text" id="update-supplier-location" placeholder="Location">
+            <input type="text" id="update-supplier-contact" placeholder="Contact Info">
+            <button type="submit">Update</button>
+          </form>
+        </div>
+
+        <!-- Delete Supplier -->
+        <div class="form-section">
+          <h3>Delete Supplier</h3>
+          <form id="delete-supplier-form">
+            <input type="text" id="delete-supplier-id" placeholder="Supplier ID" required>
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+
+        <!-- Add Purchase -->
+        <div class="form-section">
+          <h3>Add Purchase</h3>
+          <form id="add-purchase-form">
+            <select id="purchase-supplier" required>
+              <option value="">Select Supplier</option>
+            </select>
+            <input type="text" id="purchase-product" placeholder="Product Name" required>
+            <input type="number" id="purchase-quantity" placeholder="Quantity" required min="0">
+            <input type="number" id="purchase-price" placeholder="Price per Unit" step="0.01" required min="0">
+            <input type="date" id="purchase-date" required>
+            <button type="submit">Add Purchase</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Supplier and Purchase Tables -->
+      <div class="table-section">
+        <h3>All Suppliers</h3>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search by Name or ID"
+          oninput="searchSuppliers()"
+        />
+        <table id="supplier-table">
+          <thead>
+            <tr>
+              <th>Supplier ID</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Contact Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dinamik içerik -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-section">
+        <h3>All Purchases</h3>
+        <input
+          type="text"
+          id="purchase-search-bar"
+          placeholder="Search by Supplier, ID, or Date"
+          oninput="searchPurchases()"
+        />
+        <table id="purchase-table">
+          <thead>
+            <tr>
+              <th>Purchase ID</th>
+              <th>Supplier</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price per Unit ($)</th>
+              <th>Total Cost ($)</th> 
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dinamik içerik  -->
+          </tbody>
+        </table>
+      </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("sidebar-topbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("common-components").innerHTML = html;
+        });
+    });
+  </script>
+</body>
+</html>

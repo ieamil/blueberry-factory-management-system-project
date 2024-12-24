@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.content {
+  margin-left: 220px;
+  padding-top: 80px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Form ve Tablo Alanını Düzenle */
+.forms {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.form-section {
+  background-color: #F5E8DC;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.33% - 20px); 
+  min-width: 300px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;  
+}
+
+.form-section h3 {
+  color: #f87f71;
+  margin-bottom: 15px;
+}
+
+.form-section form input,
+.form-section form select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #86C232;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-section form button:hover {
+  background-color: #61892F;
+}
+
+/* Sayfa Başlığı */
+.content h2 {
+  color: #E98074;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* Tablo Alanı */
+.table-section {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.table-section h3 {
+  color: #f87f71;
+  margin-bottom: 15px;
+}
+
+table th {
+  background-color: #EAE7DC;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td button {
+  background-color: #E98074;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table td button:hover {
+  background-color: #E85A4F;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .forms {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+}

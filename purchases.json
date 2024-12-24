@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P1",
+    "supplierId": "1",
+    "supplierName": "John's Farm",
+    "productName": "Dried Blueberry",
+    "quantity": 100,
+    "price": 2.5,
+    "totalCost": 250.0,
+    "date": "2023-12-15"
+  },
+  {
+    "id": "P2",
+    "supplierId": "2",
+    "supplierName": "Blueberry World",
+    "productName": "Organic Blueberry",
+    "quantity": 200,
+    "price": 3.0,
+    "totalCost": 600.0,
+    "date": "2023-12-20"
+  },
+  {
+    "id": "P3",
+    "supplierId": "3",
+    "supplierName": "Organic Supplies",
+    "productName": "Frozen Blueberry",
+    "quantity": 150,
+    "price": 2.8,
+    "totalCost": 420.0,
+    "date": "2023-12-25"
+  },
+  {
+    "id": "P4",
+    "supplierId": "4",
+    "supplierName": "Berry Delight",
+    "productName": "Fresh Blueberry",
+    "quantity": 250,
+    "price": 3.5,
+    "totalCost": 875.0,
+    "date": "2023-12-28"
+  },
+  {
+    "id": "P5",
+    "supplierId": "5",
+    "supplierName": "Farm Fresh Supplies",
+    "productName": "Blueberry Jam",
+    "quantity": 50,
+    "price": 4.0,
+    "totalCost": 200.0,
+    "date": "2023-12-30"
+  },
+  {
+    "id": "P6",
+    "supplierId": "6",
+    "supplierName": "Nature's Bounty",
+    "productName": "Blueberry Juice",
+    "quantity": 120,
+    "price": 3.2,
+    "totalCost": 384.0,
+    "date": "2024-01-02"
+  },
+  {
+    "id": "P7",
+    "supplierId": "7",
+    "supplierName": "Healthy Harvest",
+    "productName": "Dried Blueberry",
+    "quantity": 180,
+    "price": 2.6,
+    "totalCost": 468.0,
+    "date": "2024-01-05"
+  },
+  {
+    "id": "P8",
+    "supplierId": "8",
+    "supplierName": "Berry Good Farms",
+    "productName": "Frozen Blueberry",
+    "quantity": 300,
+    "price": 2.7,
+    "totalCost": 810.0,
+    "date": "2024-01-10"
+  }
+]

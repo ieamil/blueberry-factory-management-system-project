@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "John's Farm",
+    "location": "California",
+    "contact": "john@example.com"
+  },
+  {
+    "id": "2",
+    "name": "Blueberry World",
+    "location": "Florida",
+    "contact": "blueberry@example.com"
+  },
+  {
+    "id": "3",
+    "name": "Organic Supplies",
+    "location": "Texas",
+    "contact": "organic@example.com"
+  },
+  {
+    "id": "4",
+    "name": "Fresh Berries Co.",
+    "location": "Washington",
+    "contact": "freshberries@example.com"
+  },
+  {
+    "id": "5",
+    "name": "Berry Delight",
+    "location": "Oregon",
+    "contact": "delight@example.com"
+  },
+  {
+    "id": "6",
+    "name": "Nature's Harvest",
+    "location": "New York",
+    "contact": "natures@example.com"
+  },
+  {
+    "id": "7",
+    "name": "Farm to Table Supplies",
+    "location": "Colorado",
+    "contact": "farmtotable@example.com"
+  },
+  {
+    "id": "8",
+    "name": "Berry Bliss Inc.",
+    "location": "Georgia",
+    "contact": "berrybliss@example.com"
+  },
+  {
+    "id": "9",
+    "name": "Berry Fields Forever",
+    "location": "Michigan",
+    "contact": "fieldsforever@example.com"
+  },
+  {
+    "id": "10",
+    "name": "Sweet Harvest Farms",
+    "location": "Pennsylvania",
+    "contact": "sweetharvest@example.com"
+  },
+  {
+    "id": "11",
+    "name": "Global Berry Partners",
+    "location": "Illinois",
+    "contact": "globalberry@gmail.com"
+  },
+  {
+    "id": "12",
+    "name": "Green Valley Berries",
+    "location": "Virginia",
+    "contact": "greenvalley@gmail.com"
+  },
+  {
+    "id": "13",
+    "name": "Berry Wonders",
+    "location": "Arizona",
+    "contact": "berrywonders@gmail.com"
+  },
+  {
+    "id": "14",
+    "name": "Evergreen Farms",
+    "location": "Nevada",
+    "contact": "evergreen@gmail.com"
+  },
+  {
+    "id": "15",
+    "name": "Blueberry Paradise",
+    "location": "North Carolina",
+    "contact": "paradise@gmail.com"
+  }
+]

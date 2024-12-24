@@ -1,0 +1,82 @@
+[
+  {
+    "orderID": "ORD001",
+    "customerName": "Ahmet Yılmaz",
+    "productName": "Organic Blueberry",
+    "category": "Small",
+    "quantity": 5,
+    "totalPrice": 24,
+    "status": "Pending",
+    "orderDate": "2024-12-21"
+  },
+  {
+    "orderID": "ORD002",
+    "customerName": "Mehmet Demir",
+    "productName": "Organic Blueberry",
+    "category": "Medium",
+    "quantity": 10,
+    "totalPrice": 45,
+    "status": "Shipped",
+    "orderDate": "2024-12-20"
+  },
+  {
+    "orderID": "ORD003",
+    "customerName": "Elif Kaya",
+    "productName": "Dried Blueberry",
+    "category": "Small",
+    "quantity": 15,
+    "totalPrice": 75,
+    "status": "Processing",
+    "orderDate": "2024-12-19"
+  },
+  {
+    "orderID": "ORD004",
+    "customerName": "Cem Özkan",
+    "productName": "Dried Blueberry",
+    "category": "Extra Large",
+    "quantity": 3,
+    "totalPrice": 12.6,
+    "status": "Delivered",
+    "orderDate": "2024-12-18"
+  },
+  {
+    "orderID": "ORD005",
+    "customerName": "Ayşe Demir",
+    "productName": "Frozen Blueberry",
+    "category": "Premium",
+    "quantity": 8,
+    "totalPrice": 28,
+    "status": "Pending",
+    "orderDate": "2024-12-17"
+  },
+  {
+    "orderID": "ORD006",
+    "customerName": "Hasan Kurt",
+    "productName": "Dried Blueberry",
+    "category": "Family Pack",
+    "quantity": 6,
+    "totalPrice": 24,
+    "status": "Shipped",
+    "orderDate": "2024-12-16"
+  },
+  {
+    "orderID": "ORD007",
+    "customerName": "Zeynep Arslan",
+    "productName": "Frozen Blueberry",
+    "category": "Bulk Pack",
+    "quantity": 4,
+    "totalPrice": 15.2,
+    "status": "Processing",
+    "orderDate": "2024-12-15"
+  },
+  {
+    "orderID": "ORD008",
+    "customerName": "Burak Yılmaz",
+    "productName": "Frozen Blueberry",
+    "category": "Small",
+    "quantity": 12,
+    "totalPrice": 57.6,
+    "status": "Delivered",
+    "orderDate": "2024-12-14"
+  }
+]

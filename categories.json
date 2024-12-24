@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "name": "Small",
+      "minWeight": 0,
+      "maxWeight": 100,
+      "pricePerKg": 5.0
+    },
+    {
+      "id": 2,
+      "name": "Medium",
+      "minWeight": 101,
+      "maxWeight": 250,
+      "pricePerKg": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Large",
+      "minWeight": 251,
+      "maxWeight": 500,
+      "pricePerKg": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Extra Large",
+      "minWeight": 501,
+      "maxWeight": 1000,
+      "pricePerKg": 4.2
+    },
+    {
+      "id": 5,
+      "name": "Family Pack",
+      "minWeight": 1001,
+      "maxWeight": 2000,
+      "pricePerKg": 4.0
+    },
+    {
+      "id": 6,
+      "name": "Bulk Pack",
+      "minWeight": 2001,
+      "maxWeight": 5000,
+      "pricePerKg": 3.8
+    },
+    {
+      "id": 7,
+      "name": "Premium",
+      "minWeight": 5001,
+      "maxWeight": null,
+      "pricePerKg": 3.5
+    }
+  ]
+  

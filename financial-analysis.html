@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Analysis</title>
+  <link rel="stylesheet" href="css/financial-analysis.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script src="javascript/financial-analysis.js" defer></script>
+</head>
+<body>
+
+  <div id="common-components"></div>
+
+  <div class="content">
+    <h2>Financial Analysis</h2>
+    <!-- Financial Analysis Section -->
+    <div class="form-section">
+
+      <div class="date-range-section">
+        <h3>Choose Date Range for Financial Analysis</h3>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" />
+
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" />
+      </div>
+
+      <!-- Total Revenue from Orders -->
+      <div class="total-revenue">
+        <h4>Total Revenue</h4>
+        <p id="total-revenue"></p>
+      </div>
+
+      <!-- Total Expenses from Suppliers -->
+      <div class="total-expenses">
+        <h4>Total Expenses</h4>
+        <p id="total-expenses"></p>
+      </div>
+
+      <!-- Tax Calculation -->
+      <div class="tax-calculation">
+        <h4>Tax Calculation</h4>
+        <p>Tax: <span id="tax-amount"></span></p>
+        <p>Rate: <span id="tax-rate"></span></p>
+      </div>
+
+      <!-- Net Income -->
+      <h3>Net Income</h3>
+      <label for="net-income">Net Income:</label>
+      <input type="text" id="net-income" readonly value="">
+
+    </div>
+
+    <!-- Calculate Financials Button -->
+    <button id="calculate" onclick="calculateFinancials()">Calculate Financials</button>
+
+    <!-- Summary of Results -->
+    <div class="form-section">
+      <h3>Summary</h3>
+      <p>Total Revenue: <span id="revenue-summary"></span></p>
+      <p>Total Expenses: <span id="expenses-summary"></span></p>
+      <p>Total Tax: <span id="tax-summary"></span></p>
+      <p>Net Income: <span id="net-summary"></span></p>
+    </div>
+
+    <!-- Category Summary  -->
+    <div id="category-summary-container">
+      <h3>Category Summary</h3>
+      <div id="category-sales"></div>
+      <div id="category-stock"></div>
+    </div>
+
+    <button id="export-csv">Export to CSV</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("sidebar-topbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("common-components").innerHTML = html;
+        })
+        .catch((error) => console.error("Failed to load sidebar and topbar:", error));
+    });
+  </script>
+</body>
+</html>
