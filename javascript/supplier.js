@@ -60,6 +60,11 @@ document.getElementById("add-supplier-form").addEventListener("submit", (event) 
   const supplierLocation = document.getElementById("supplier-location").value.trim();
   const supplierContact = document.getElementById("supplier-contact").value.trim();
 
+  if (!/^\d+$/.test(supplierId)) {
+    alert("Supplier ID must contain only numbers!");
+    return;
+  }  
+
   if (suppliers.some((supplier) => supplier.id === supplierId)) {
     alert("Supplier ID already exists!");
     return;
@@ -157,6 +162,11 @@ document.getElementById("update-supplier-form").addEventListener("submit", (even
 
   const supplier = suppliers.find((s) => s.id === supplierId);
 
+  if (!/^\d+$/.test(supplierId)) {
+    alert("Supplier ID must contain only numbers!");
+    return;
+  }  
+
   if (supplier) {
     if (supplierName) supplier.name = supplierName;
     if (supplierLocation) supplier.location = supplierLocation;
@@ -177,6 +187,11 @@ document.getElementById("delete-supplier-form").addEventListener("submit", (even
 
   const supplierId = document.getElementById("delete-supplier-id").value.trim();
   const index = suppliers.findIndex((supplier) => supplier.id === supplierId);
+
+  if (!/^\d+$/.test(supplierId)) {
+    alert("Supplier ID must contain only numbers!");
+    return;
+  }  
 
   if (index > -1) {
     suppliers.splice(index, 1);
